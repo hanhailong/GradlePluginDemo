@@ -1,0 +1,14 @@
+buildscript {
+    repositories {
+        flatDir {
+            name "localRepository"
+            dir "plugin/localRepository/libs"
+        }
+
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.hhl:plugin:1.0-SNAPSHOT'
+    }
+}

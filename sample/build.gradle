@@ -1,0 +1,21 @@
+group 'com.hhl'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'com.hhl.demoplugin'
+
+repositories {
+    mavenCentral()
+}
+
+demoPluginExt {
+    name "dahai"
+    version 10
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile project(':plugin')
+    compile localGroovy()
+}
